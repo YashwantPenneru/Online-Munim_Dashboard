@@ -1,0 +1,140 @@
+<div class="container-fluid bg-light mt-3 rounded">
+    <div class="text-center ms-5 pt-5">
+        <h2>Business Registration Form</h2>
+        <h6>Complete your business profile to get started</h6>
+    </div>
+    <div class="container bg-white">
+        <div class="mt-4 ms-5">
+            <form action="">
+                <div class="row me-3 mt-4 ">
+                    <!-- Personal Information -->
+                    <div class="mb-2 mt-4">
+                        <h4><i class="fa-solid fa-user fa-xs me-2 ms-1" style="color: #3d75d6;"></i>Personal Information
+                        </h4>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="fatherName" class="form-label">Father Name</label>
+                        <input type="text" class="form-control" id="fatherName">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="9175 34 08 07">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="mailId" class="form-label">Email ID</label>
+                        <input type="email" class="form-control" id="mailId">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="gender" class="form-label">Gender</label>
+                        <div>
+                            <input type="radio" id="male" name="gender">
+                            <label for="male"><i class="fa-solid fa-mars ms-1 me-1"
+                                    style="color: #0370c4;"></i>Male</label>
+                            <input type="radio" id="female" name="gender">
+                            <label for="female"><i class="fa-solid fa-venus ms-1 me-1"
+                                    style="color: #a20695;"></i>Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Details -->
+                <div class="row me-3">
+                    <div class="mt-4 mb-2">
+                        <h4><i class="fa-solid fa-building fa-xs me-2 ms-1" style="color: #3d75d6;"></i>Business Details
+                        </h4>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="firmName" class="form-label">Firm Name</label>
+                        <input type="text" class="form-control" id="firmName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="gst" class="form-label">GST No.<i class="fa-solid fa-circle-info ms-2 me-1"
+                                style="color: rgb(147, 146, 146);"></i></label>
+                        <input type="text" class="form-control" id="gst">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="state" class="form-label">State</label>
+                        <select class="form-select" name="state" id="state">
+                            <option value="Select State">Select State</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="city" class="form-label">City</label>
+                        <select class="form-select" name="city" id="city">
+                            <option value="Select city">Select city</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Nagpur">Nagpur</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea class="form-control" id="address"></textarea>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="pinCode" class="form-label">Pin Code</label>
+                        <input type="text" class="form-control" id="pinCode">
+                    </div>
+
+
+                </div>
+
+                <!-- Identification Details -->
+                <div class="row me-3">
+                    <div class="mt-4 mb-2">
+                        <h4><i class="fa-solid fa-id-card fa-xs me-2 ms-1" style="color: #3d75d6;"></i>Identification
+                            Details
+                        </h4>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="aadhar" class="form-label">Aadhar Card Number<i
+                                class="fa-solid fa-check fw-bold ms-1 me-1" style="color: #1ca933;"></i></label>
+                        <input type="text" class="form-control" id="aadhar">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="pan" class="form-label">Pan Card Number<i
+                                class="fa-solid fa-check fw-bold ms-1 me-1" style="color: #1ca933;"></i></label>
+                        <input type="text" class="form-control" id="pan">
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="row mt-4 mb-5 g-3 me-3">
+                    <div class="col-sm-3">
+                        <button class="btn btn-success w-100">
+                            <i class="fa-solid fa-cart-shopping text-white"></i> Sell
+                        </button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-danger w-100">
+                            <i class="fa-solid fa-money-bill-wave text-white"></i> Loan
+                        </button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-warning w-100">
+                            <i class="fa-solid fa-handshake-simple text-white"></i> Udhaar
+                        </button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-primary w-100">
+                            <i class="fa-solid fa-house-chimney text-white"></i> Home
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,152 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"><i class="fa-solid fa-building fa-xs me-2 ms-1" style="color: #3d75d6;"></i>Business Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid bg-light pt-4 pb-2">
+    <div class="container bg-white rounded pb-4">
+        <div class="text-start ms-5 mt-5">
+            <h2 class="pt-4">Business Registration Form</h2>
+        </div>
+        <div class="mt-4 ms-5">
+            <form action="">
+                <div class="row me-3 mt-4">
+                    <!-- Personal Information -->
+                    <div>
+                        <h4>Personal Information</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="fatherName" class="form-label">Father Name</label>
+                        <input type="text" class="form-control" id="fatherName">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="firmName" class="form-label">Firm Name</label>
+                        <input type="text" class="form-control" id="firmName">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="9175 34 08 07">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="gender" class="form-label">Gender</label>
+                        <div>
+                            <input type="radio" id="male" name="gender">
+                            <label for="male"><i class="fa-solid fa-mars ms-1 me-1"
+                                    style="color: #0370c4;"></i>Male</label>
+                            <input type="radio" id="female" name="gender">
+                            <label for="female"><i class="fa-solid fa-venus ms-1 me-1"
+                                    style="color: #a20695;"></i>Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="row me-3">
+                    <div class="mt-4 mb-4">
+                        <h4>Contact Details</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="pinCode" class="form-label">Pin Code</label>
+                        <input type="text" class="form-control" id="pinCode">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="mailId" class="form-label">Mail ID</label>
+                        <input type="email" class="form-control" id="mailId">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="state" class="form-label">State</label>
+                        <select class="form-select" name="state" id="state">
+                            <option value="Select State">Select State</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="city" class="form-label">City</label>
+                        <select class="form-select" name="city" id="city">
+                            <option value="Select city">Select city</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Nagpur">Nagpur</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Identification Details -->
+                <div class="row me-3">
+                    <div class="mt-4 mb-4">
+                        <h4>Identification Details</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="gst" class="form-label">GST No.<i class="fa-solid fa-circle-info ms-2 me-1"
+                                style="color: rgb(147, 146, 146);"></i></label>
+                        <input type="text" class="form-control" id="gst">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="aadhar" class="form-label">Aadhar Card No.<i
+                                class="fa-solid fa-circle-info ms-2 me-1"
+                                style="color: rgb(147, 146, 146);"></i></label>
+                        <input type="text" class="form-control" id="aadhar">
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="pan" class="form-label">Pan Card No.<i class="fa-solid fa-circle-info ms-2 me-1"
+                                style="color: rgb(147, 146, 146);"></i></label>
+                        <input type="text" class="form-control" id="pan">
+                    </div>
+                </div>
+
+                <div class="mt-5 mb-5">
+                    <div class="d-flex gap-4">
+                        <button class="btn btn-success btn-lg" style="border-radius: .7rem;"><i
+                                class="fa-solid fa-cart-shopping ms-1 me-1" style="color: #fcfcfc;"></i>Sell</button>
+                        <button class="btn btn-danger btn-lg" style="border-radius: .7rem;"><i
+                                class="fa-solid fa-money-bill-wave ms-1 me-1" style="color: #fcfcfc;"></i>Loan</button>
+                        <button class="btn btn-warning btn-lg" style="border-radius: .7rem;"><i
+                                class="fa-solid fa-handshake-simple ms-1 me-1"
+                                style="color: #fcfcfc;"></i>Udhaar</button>
+                        <button class="btn btn-primary btn-lg" style="border-radius: .7rem;"><i
+                                class="fa-solid fa-house-chimney ms-1 me-1" style="color: #fcfcfc;"></i>Home</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

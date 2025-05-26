@@ -1,0 +1,239 @@
+<div class="bg-light pt-2 pe-2">
+        <div class="row mt-5 ms-3 me-3 ">
+            <div class="col-md-3 ">
+                <div class="border bg-white ps-3 pe-3 rounded-3">
+                    <div class="d-flex mt-3">
+                        <h6 class="text-secondary">Today's Sales</h6>
+                        <div class="ms-auto">
+                            <h6 class="text-secondary">...</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h5 class="fw-bold">&#8377;1,20,500</h5>
+                        <div class="ms-auto ">
+                            <p class="text-success">+12.5%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="border bg-white ps-3 pe-3 rounded-3">
+                    <div class="d-flex mt-3">
+                        <h6 class="text-secondary">New Customers</h6>
+                        <div class="ms-auto">
+                            <h6 class="text-secondary">...</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex ">
+                        <h5 class="fw-bold">15</h5>
+                        <div class="ms-auto ">
+                            <p class="text-success">+2.4%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="border bg-white ps-3 pe-3 rounded-3">
+                    <div class="d-flex  mt-3">
+                        <h6 class="text-secondary">Active Loans</h6>
+                        <div class="ms-auto">
+                            <h6 class="text-secondary">...</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex ">
+                        <h5 class="fw-bold">05</h5>
+                        <div class="ms-auto">
+                            <p class="text-danger">-0.5%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="border  bg-white ps-3 pe-3 rounded-3">
+                    <div class="d-flex  mt-3">
+                        <h6 class="text-secondary">Total Orders</h6>
+                        <div class="ms-auto">
+                            <h6 class="text-secondary">...</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h5 class="fw-bold">28</h5>
+                        <div class="ms-auto ">
+                            <p class="text-success">+8.2%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Column -->
+        <div class="row mt-4 ms-3 me-3">
+            <div class="col-md-9">
+                <div class="border  bg-white ps-3 pe-3 rounded-3">
+                    <div class="chart-container">
+                        <div class="chart-controls d-flex justify-content-between align-items-center">
+                            <h4 class="ms-5 mt-3 mb-4">Total Sales</h4>
+                            <div class="btn">
+                                <button *ngFor="let series of ['week', 'month1', 'month2']"
+                                    (click)="onSeriesChange(series)" [class.active]="selectedSeries === series"
+                                    class="btn btn-series">
+                                    {{ series === 'month1' ? 'Month' : series === 'month2' ? 'Year' : 'Week' }}
+                                </button>
+                            </div>
+                        </div>
+                        <div class="">
+                            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"
+                                style=" display: block;"></highcharts-chart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="border  bg-white ps-3 pe-3 rounded-3 pb-4">
+                    <div class="ms-2 me-3">
+                        <div class="ms-2 mt-4">
+                            <h4>Today's Transaction</h4>
+                        </div>
+                        <div class="d-flex ms-2 mt-4">
+                            <h6 class="text-secondary ">Opening Cash</h6>
+                            <div class="ms-auto me-2">
+                                <h6 class="fw-bold">&#8377;1,20,500</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-2 mt-4">
+                            <h6 class="text-secondary ">Receipt</h6>
+                            <div class="ms-auto me-2">
+                                <h6 class="fw-bold">&#8377;20,500</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-2 mt-4">
+                            <h6 class="text-secondary ">Payment</h6>
+                            <div class="ms-auto me-2">
+                                <h6 class="fw-bold">&#8377;20,500</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-2 mt-4">
+                            <h6 class="text-secondary ">Sale</h6>
+                            <div class="ms-auto me-2">
+                                <h6 class="fw-bold">&#8377;20,500</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-2 mt-4">
+                            <h6 class="text-secondary ">Purchase</h6>
+                            <div class="ms-auto me-2">
+                                <h6 class="fw-bold">&#8377;20,500</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-2 mt-4">
+                            <h6 class="text-secondary ">Sale Return</h6>
+                            <div class="ms-auto me-2">
+                                <h6 class="fw-bold">&#8377;20,500</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-2 mt-4 mb-4 ">
+                            <h6 class="text-secondary ">Purchase Return</h6>
+                            <div class="ms-auto me-2">
+                                <h6 class="fw-bold">&#8377;20,500</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Column -->
+        <div class="row mt-5 ms-2 me-3">
+            <div class="col-md-9 ">
+                <div class="border border-seconadry bg-white pe-3 rounded-3 ms-2 me-2 mb-5 pb-5">
+                    <div class="d-flex mt-4 ms-3">
+                        <h4>To-Do List</h4>
+                        <div class="ms-auto mt-3 me-3">
+                            <i class="fa-solid fa-plus text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="pt-3 pb-5 ms-2">
+                        <table class="table table-borderless ms-1 mb-5">
+                            <thead>
+                                <tr>
+                                    <th>Firm Name</th>
+                                    <th>Task</th>
+                                    <th>Staff ID</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Omumin</td>
+                                    <td>Add Stock</td>
+                                    <td>4515</td>
+                                    <td>12.02.24</td>
+                                    <td>15.02.24</td>
+                                    <td class="text-primary"><span class="rounded-pill p-1"
+                                            style="background-color: rgb(181, 205, 253);">In Process</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Sky Gold</td>
+                                    <td>Visit Customer &#64; Baner</td>
+                                    <td>252Radhika</td>
+                                    <td>S.Date</td>
+                                    <td>E.Date</td>
+                                    <td class="text-success "><span class="rounded-pill p-1"
+                                            style="background-color: rgb(178, 239, 178);">Completed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="border border-seconadry bg-white rounded-3 pb-4">
+                    <div class="p-3">
+                        <div class="ms-2 mt-3">
+                            <h5>Top Selling Products</h5>
+                        </div>
+                        <div class=" mt-3">
+                            <div class="d-flex">
+                                <div>
+                                    <h6 class="fw-bold">Ring</h6>
+                                    <p class="text-secondary">Qty:1000</p>
+                                </div>
+                                <div class="ms-auto">
+                                    <h6 class="text-secondary">#Rng 1212</h6>
+                                    <p class="text-center fw-bold">&#8377;50,000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="d-flex">
+                                <div>
+                                    <small class="fw-bold ">Mangalsutra</small>
+                                    <p class="text-secondary">Qty:1000</p>
+                                </div>
+                                <div class="ms-auto ">
+                                    <h6 class="text-secondary">#Rbng1212</h6>
+                                    <p class="text-center fw-bold">&#8377;50,000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" mt-3 ">
+                            <div class="d-flex">
+                                <div>
+                                    <h6 class="fw-bold">Necklace</h6>
+                                    <p class="text-secondary">Qty:1000</p>
+                                </div>
+                                <div class="ms-auto ">
+                                    <h6 class="text-secondary">#Rbng1212</h6>
+                                    <p class="text-center fw-bold">&#8377;50,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

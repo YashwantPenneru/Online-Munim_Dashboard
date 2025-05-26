@@ -1,0 +1,5 @@
+.nav-item .nav-link.active {
+    background-color: rgb(212, 228, 233); 
+    color: #0033cc !important;
+    border-right: 3px solid #0033cc; 
+}
